@@ -38,7 +38,7 @@ refs.searchForm.addEventListener('submit', event => {
   getImagesByQuery(query)
     .then(data => {
       if (data.hits.length === 0) {
-        iziToast({
+        iziToast.error({
           title: 'Error',
           message: messageNoImagesFound,
           position: 'topRight'
